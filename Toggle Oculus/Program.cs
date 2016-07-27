@@ -30,7 +30,12 @@ namespace Toggle_Oculus
 
             // Refresh and display the current service status.
             sc.Refresh();
-            MessageBox.Show($"The Oculus service status is now set to {sc.Status.ToString()}.");
+            MessageBox.Show(
+                $"The Oculus service status is now set to {sc.Status.ToString()}.",
+                "Oculus Service Toggled",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
         }
     }
 }
